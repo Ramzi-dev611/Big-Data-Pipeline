@@ -1,6 +1,11 @@
-# FrontBigData
+# Front 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
+This project was generated with Angular
+
+## Preview 
+![Screenshot 2022-05-14 161211](https://user-images.githubusercontent.com/62222721/168434147-1b48dcbc-036f-471f-a0d3-f236f6b1df19.png)
+![Screenshot 2022-05-14 161231](https://user-images.githubusercontent.com/62222721/168434153-35a69c92-a7b3-41f9-a980-2f09cc93d662.png)
+
 
 ## Development server
 

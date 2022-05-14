@@ -28,3 +28,7 @@ in the model creation process a Logistic regression classifier and decision tree
 ## Missing configs in this repository and future features to add
 * Docker compose for containerizing the applications
 * the pipeline is missing the definition of the project were the data gathering and preprocessing happens from an original source
+
+
+## Reference
+https://insatunisia.github.io/TP-BigData/

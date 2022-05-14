@@ -7,6 +7,8 @@ The goal of this project is to establish a machine learning pipeline in order to
 in the model creation process a Logistic regression classifier and decision tree classifier were created and than saved for later used the one with higher precision
 
 ## Pipelines architecture
+![Copy of architecture-design](https://user-images.githubusercontent.com/62222721/168432691-96861376-b020-4f12-a40a-aaff276cbe7a.jpg)
+
 
 ## technologies involved
 * Spark (mlib and spark sql) 

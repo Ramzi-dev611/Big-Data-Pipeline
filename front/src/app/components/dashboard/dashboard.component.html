@@ -1,0 +1,60 @@
+<div class="index">
+  <div class="dashboard">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Account Balance</th>
+          <th scope="col">Duration of Credit (month)</th>
+          <th scope="col">Payment Status of Previous Credit</th>
+          <th scope="col">Purpose of Credit</th>
+          <th scope="col">Credit Amount</th>
+          <th scope="col">Value Savings/Stocks</th>
+          <th scope="col">Length of current employment</th>
+          <th scope="col">Instalment rate in percentage of disposable income</th>
+          <th scope="col">Sex & Marital Status</th>
+          <th scope="col">Other debtors / guarantors</th>
+          <th scope="col">Duration in Current address</th>
+          <th scope="col">Property</th>
+          <th scope="col">Age</th>
+          <th scope="col">Concurrent Credits</th>
+          <th scope="col">Type of apartment</th>
+          <th scope="col">Number of existing credits at this bank</th>
+          <th scope="col">Occupation</th>
+          <th scope="col">Number of people being liable to provide maintenance for</th>
+          <th scope="col">Telephone</th>
+          <th scope="col">Foreign Worker</th>
+          <th scope="col">Creditability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let prediction of predictions">
+          <th scope="row">{{prediction.id}}</th>
+          <td>{{prediction.accountBalance}}</td>
+          <td>{{prediction.durationOfCredit}}</td>
+          <td>{{prediction.paymentStatus}}</td>
+          <td>{{prediction.purpose}}</td>
+          <td>{{prediction.creditAmount}}</td>
+          <td>{{prediction.valueSavings}}</td>
+          <td>{{prediction.currentEmploymentLength}}</td>
+          <td>{{prediction.istalment}}</td>
+          <td>{{prediction.sex}}</td>
+          <td>{{prediction.guarantors}}</td>
+          <td>{{prediction.durationCurrentAddress}}</td>
+          <td>{{prediction.sex}}</td>
+          <td>{{prediction.proprety}}</td>
+          <td>{{prediction.age}}</td>
+          <td>{{prediction.concurrentCredits}}</td>
+          <td>{{prediction.housing}}</td>
+          <td>{{prediction.numberOfExistingCredits}}</td>
+          <td>{{prediction.occupation}}</td>
+          <td>{{prediction.dependentNumber}}</td>
+          <td>{{prediction.tel}}</td>
+          <td>{{prediction.foreignWorker}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="empty"></div>
+  </div>
+
+</div>

@@ -1,0 +1,36 @@
+.index{
+    padding-top: 0;
+    margin-top: 0;
+    
+    background-image: url("src/assets/bg.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-size: 100%;
+    height: 100%;
+    background-attachment: fixed;
+
+}
+*{
+    font-family: 'poppins';
+}
+
+.container{
+    width: 50%;
+    background-color: rgba(245, 245, 245, 0.5);
+    border-radius: 50px;
+}
+input.ng-invalid.ng-touched {
+    border: red solid 2px;
+}
+
+.select{
+    width: 100%;
+    border: solid rgba(128, 128, 128, 0.5) 1px;
+    padding: 5px
+}
+
+.item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

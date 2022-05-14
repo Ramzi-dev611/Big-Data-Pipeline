@@ -1,0 +1,189 @@
+<div class="index">
+    <br><br><br>
+    <div class="container">
+        <br>
+        <div class="m-5">
+            <h2 class="text-center">Predict</h2>
+            <div class="card-body">
+                <form>
+                    <div class="item">
+                        <label for="account-balance">Account Balance:</label> <br/>
+                        <select id="account-balance" name="account-balance" class="select" [(ngModel)]="object.accountBalance">
+                            <option value="1">... < 0 DM</option>
+                            <option value="2">0 <= ... < 200 DM</option>
+                            <option value="3">200 DM /salary</option>
+                            <option value="4">no checking account</option>
+                        </select><br/>
+                    </div>
+                    
+        
+                    <div class="form-group mb-3 item">
+                        <label for="duration-of-credit">Duration of Credit (month) : </label>
+                        <input class="form-control" formControlName="duration-of-credit" type="number" placeholder="Duration of Credit" [(ngModel)]="object.durationOfCredit">
+                    </div>
+        
+                    <div class="item">
+                        <label for="payment-status">Payment Status of Previous Credit:</label> <br/>
+                        <select id="payment-status" name="payment-status"  class="select" [(ngModel)]="object.paymentStatus">
+                            <option value="0">no credits taken/all credits paid back duly</option>
+                            <option value="1">all credits at this bank paid back duly</option>
+                            <option value="2">existing credits paid back duly till now</option>
+                            <option value="3">delay in paying off in the past</option>
+                            <option value="4">critical account/other credits existing (not at this bank)</option>
+                        </select><br/>
+                    </div>
+                    
+                    <div class="item">
+        
+                        <label for="purpose">Purpose of Credit:</label> <br/>
+                        <select id="purpose" name="purpose" class="select" [(ngModel)]="object.purpose">
+                            <option value="0">car (new)</option>
+                            <option value="1">car (used)</option>
+                            <option value="2">furniture/equipment</option>
+                            <option value="3">radio/television</option>
+                            <option value="4">domestic appliances</option>
+                            <option value="5">repairs</option>
+                            <option value="6">education</option>
+                            <option value="7">vacation</option>
+                            <option value="8">retraining</option>
+                            <option value="9">business</option>
+                            <option value="10">others</option>
+                        </select><br/>
+                    </div>
+        
+                    <div class="form-group mb-3 item">
+                        <label for="credit-amount">Credit Amount: </label>
+                        <input class="form-control" formControlName="credit-amount" type="number" placeholder="credit-amount" [(ngModel)]="object.creditAmount">
+                    </div>
+        
+                    <div class="item">
+                        <label for="value_savings">Value Savings/Stocks: </label> <br/>
+                        <select id="value_savings" name="value_savings" class="select" [(ngModel)]="object.valueSavings">
+                            <option value="1">... < 100 DM</option>
+                            <option value="2">100 <= ... < 500 DM</option>
+                            <option value="3">500 <= ... < 1000 DM</option>
+                            <option value="4">.. >= 1000 DM</option>
+                            <option value="5">unknown/ no savings account</option>
+                        </select><br/>
+                    </div>
+        
+                    <div class="item">
+                        <label for="current-employment-length">Length of current employment: </label> <br/>
+                        <select id="current-employment-length" name="current-employment-length" class="select" [(ngModel)]="object.currentEmploymentLength">
+                            <option value="1">unemployed</option>
+                            <option value="2">... < 1 year</option>
+                            <option value="3">1 <= ... < 4 years</option>
+                            <option value="4">4 <= ... < 7 yearS</option>
+                            <option value="5">.. >= 7 years</option>
+                    </select><br/>
+                    </div>
+        
+                    <div class="form-group mb-3 item">
+                        <label for="Instalment">Instalment rate in percentage of disposable income: </label>
+                        <input class="form-control" formControlName="Instalment" type="number" placeholder="Instalment" [(ngModel)]="object.istalment">
+                    </div>
+        
+                    <div class="item">
+                        <label for="sex">Sex & Marital Status: </label> <br/>
+                        <select id="sex" name="sex" class="select" [(ngModel)]="object.sex">
+                            <option value="1">male: divorced/separated</option>
+                            <option value="2">female: divorced/separated/married</option>
+                            <option value="3">male: single</option>
+                            <option value="4">male: married/widowed</option>
+                            <option value="5">female: single</option>
+                        </select><br/>
+                    </div>
+        
+                    <div class="item">
+                        <label for="guarantors"> Other debtors / guarantors:</label> <br/>
+                        <select id="guarantors" name="guarantors" class="select" [(ngModel)]="object.guarantors">
+                            <option value="1">none</option>
+                            <option value="2">co-applicant</option>
+                            <option value="3">guarantor</option>
+                        </select><br/>
+                    </div>
+        
+        
+                    <div class="form-group mb-3 item">
+                        <label for="Duration">Duration in Current address: </label>
+                        <input class="form-control" formControlName="Duration" type="number" placeholder="Duration" [(ngModel)]="object.durationCurrentAddress">
+                    </div>
+        
+                    <div class="item">
+                        <label for="Property">Property:</label> <br/>
+                        <select id="Property" name="Property" class="select" [(ngModel)]="object.durationCurrentAddress">
+                            <option value="1">real estate</option>
+                            <option value="2">building society savings agreement/life insurance</option>
+                            <option value="3">car or other</option>
+                            <option value="4">unknown / no property</option>
+                        </select><br/>
+                    </div>
+        
+                    <div class="form-group mb-3 item">
+                        <label for="Age">Age: </label>
+                        <input class="form-control" formControlName="Age" type="number" placeholder="Age" [(ngModel)]="object.age">
+                    </div>
+        
+                    <div class="item">
+                        <label for="concurrent-credits">Concurrent Credits:</label> <br/>
+                        <select id="concurrent-credits" name="concurrent-credits" class="select" [(ngModel)]="object.concurrentCredits">
+                            <option value="1">bank</option>
+                            <option value="2">stores</option>
+                            <option value="3">none</option>
+                        </select><br/>
+                    </div>
+        
+                    <div class="item">
+                        <label for="apartment-type">Type of apartment:</label> <br/>
+                        <select id="apartment-type" name="apartment-type" class="select" [(ngModel)]="object.housing">
+                            <option value="1">rent</option>
+                            <option value="2">own</option>
+                            <option value="3">for free</option>
+                        </select><br/>
+                    </div>
+        
+                    <div class="form-group mb-3 item">
+                        <label for="existing-credits-number">Number of existing credits at this bank: </label>
+                        <input class="form-control" formControlName="existing-credits-number" type="number" placeholder="existing-credits-number" [(ngModel)]="object.numberOfExistingCredits">
+                    </div>
+        
+                    
+                    <div class="item">
+                        <label for="job">Occupation:</label> <br/>
+                        <select id="job" name="job" class="select" [(ngModel)]="object.occupation">
+                            <option value="1">unemployed/unskilled - non-resident</option>
+                            <option value="2">unskilled - resident</option>
+                            <option value="3">skilled employee / official</option>
+                            <option value="4">management/ self-employed/ highly qualified employee/ officer</option>
+                        </select><br/>
+                    </div>
+        
+                    <div class="form-group mb-3 item">
+                        <label for="dependents-number">Number of people being liable to provide maintenance for: </label>
+                        <input class="form-control" formControlName="dependents-number" type="number" placeholder="Number of people being liable to provide maintenance for" [(ngModel)]="object.dependentNumber">
+                    </div>
+        
+                    <div class="item">            
+                        <label for="tel">Telephone:</label> <br/>
+                        <select id="tel" name="tel" class="select" [(ngModel)]="object.tel">
+                            <option value="1">none</option>
+                            <option value="2">yes, registered under the customers name</option>
+                        </select><br/>
+                    </div>
+                    <div class="item">
+                        <label for="foreign-worker">Foreign Worker:</label> <br/>
+                        <select id="foreign-worker" name="foreign-worker" class="select" [(ngModel)]="object.foreignWorker">
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select><br/>
+                    </div>
+                    <br><br>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button class="btn btn-block btn-secondary px-5" (click)="submit()" >Predict</button>
+                    </div>
+                    <br><br>
+                </form>
+            </div>
+        </div>
+    </div><br>
+</div>
